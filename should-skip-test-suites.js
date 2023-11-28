@@ -2,5 +2,6 @@ const nodeMajorVersion = process.versions.node.split('.').map(x => parseInt(x, 1
 const shouldRunSuites = nodeMajorVersion >= 20
 if (!shouldRunSuites) {
   console.info(`Skipped templates test suites on node ${nodeMajorVersion}`)
-  process.exit(1)
+  process.exit(0)
 }
+process.exit(1)
