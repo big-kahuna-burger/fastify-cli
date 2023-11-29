@@ -14,7 +14,7 @@
     "unit:cjs": "tap \"templates/app/**/*.test.js\" --no-coverage --timeout 400 --jobs 1 --color -R specy",
     "unit:esm": "tap \"templates/app-esm/**/*.test.js\" --no-coverage --timeout 400 --jobs 1 --color -R specy",
     "unit:ts-cjs": "cross-env TS_NODE_PROJECT=./test/configs/ts-cjs.tsconfig.json tap \"templates/app-ts/**/*.test.ts\" --no-coverage --timeout 400 --jobs 1 --color -R specy",
-    "unit:ts-esm": "cross-env TS_NODE_PROJECT=./test/configs/ts-esm.tsconfig.json tap templates/app-ts-esm/test/**/*.test.ts --no-coverage --node-arg=--loader=ts-node/esm --timeout 400 --jobs 1 --color -R specy",
+    "unit:ts-esm": "cross-env TS_NODE_PROJECT=./test/configs/ts-esm.tsconfig.json tap \"templates/app-ts-esm/test/**/*.test.ts\" --no-coverage --node-arg=--loader=ts-node/esm --timeout 400 --jobs 1 --color -R specy",
     "unit:cli-js": "tap \"test/**/*.test.js\" --no-coverage --timeout 400 --jobs 1 --color -R specy",
     "unit:cli-ts": "cross-env TS_NODE_PROJECT=./test/configs/ts-cjs.tsconfig.json tap \"test/**/*.test.ts\" --no-coverage --timeout 400 --jobs 1 --color -R specy",
     "unit:cli": "npm run unit:cli-js && npm run unit:cli-ts",
